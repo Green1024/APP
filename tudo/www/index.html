@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo Jiang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/plugin.css">
+  <link rel="stylesheet" href="css/sketchpad.css">
+
+</head>
+
+<body>
+  <div class="app-page pg1" data-page="home">
+    <div class="app-topbar blue">
+      <div class="app-button left">
+        <i class="glyphicon glyphicon-menu-hamburger glycolor"></i>
+      </div>
+      <div class="app-title">
+        <span class="allnote">所有笔记</span>
+        <input type="text" class="search" placeholder="搜索...">
+      </div>
+      <div class="app-button right button1">
+        <i class="glyphicon glyphicon-option-vertical glycolor"></i>
+      </div>
+      <div class="app-button right button2">
+        <i class="glyphicon glyphicon-search glycolor"></i>
+      </div>
+      <div class="app-button right button3">
+        <i class="glyphicon glyphicon-user glycolor"></i>
+      </div>
+      <div class="app-button right button4">
+        <i class="glyphicon  glyphicon-trash glycolor"></i>
+      </div>
+    </div>
+    <div class="app-content">
+      <div class="nopage">
+        <i class="glyphicon glyphicon-duplicate" style="font-size:60px"></i>
+        <br><span style="font-size:18px">一切从笔记开始</span>
+        <br>点击+创建笔记。拍照、添加附件或者输入
+        <br>文字。
+      </div>
+      <div class="contentBox">
+        <div class="content">
+        </div>
+      </div>
+    </div>
+    <div class="shadow">
+      <ul class="actionUl">
+        <li>
+          <span class="actionName  notap takepic">拍照</span>
+          <span class="actionIcon">
+               <i class="glyphicon glyphicon-camera"></i>
+          </span>
+        </li>
+        <li>
+          <span class="actionName  notap addons">附件</span>
+          <span class="actionIcon">
+               <i class="glyphicon glyphicon-folder-open" ></i>
+          </span>
+        </li>
+        <li>
+          <span class="actionName  notap audio">录音</span>
+          <span class="actionIcon">
+                 <i class="glyphicon glyphicon-headphones"></i>
+          </span>
+        </li>
+        <li>
+          <span class="actionName  notap notice">提醒</span>
+          <span class="actionIcon">
+            <i class="glyphicon glyphicon-time"></i>
+          </span>
+        </li>
+        <li>
+          <span class="actionName  notap handwrite">手写</span>
+          <span class="actionIcon">
+                <i class="glyphicon glyphicon-pencil"></i>
+          </span>
+        </li>
+        <li>
+          <span class="actionName  notap note">文字笔记</span>
+
+          <span class="actionIcon">
+             <i class="glyphicon glyphicon-file"></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="plus">
+      <i class="glyphicon glyphicon-plus-sign" style="font-size:45px"></i>
+    </div>
+    <div class="aside">
+      <div class="asideLeft">
+        <div class="app-topbar green">
+          <div class="app-title">
+            已完成
+          </div>
+        </div>
+        <div class="app-content asidecontent"></div>
+        <div class="clearAll btn btn-success">清空</div>
+      </div>
+      <div class="asideRight"></div>
+    </div>
+  </div>
+
+  <div class="app-page pg2" data-page="page2">
+    <div class="app-topbar white">
+      <div class="app-button left ok">
+        <i class="glyphicon glyphicon-ok"></i>
+      </div>
+      <div class="app-button left back">
+        <i class="glyphicon glyphicon glyphicon-menu-left"></i>
+      </div>
+      <div class="app-button right button5 ">
+        <i class="glyphicon glyphicon-font"></i>
+      </div>
+      <div class="app-button right button4">
+        <i class="glyphicon glyphicon-paperclip"></i>
+      </div>
+      <div class="app-button right button3">
+        <i class="glyphicon glyphicon glyphicon-camera"></i>
+      </div>
+      <div class="app-button right button2">
+        <i class="glyphicon glyphicon-share-alt"></i>
+      </div>
+      <div class="app-button right button1">
+        <i class="glyphicon glyphicon-option-vertical"></i>
+      </div>
+    </div>
+    <div class="app-content writing">
+      <div class="notetitle" contenteditable placeholder="笔记标题"></div>
+      <div class="ccc">
+        <ul class="noticeIcon">
+          <li style="left:0">我的第一个笔记本</li>
+          <li style="right:25%" class="noticeTime"></li>
+          <li style="right:10%"><i class="glyphicon glyphicon-calendar"></i></li>
+          <li style="right:0"><i class="glyphicon glyphicon-info-sign"></i> </li>
+        </ul>
+        <ul class="noticeTimeSet">
+          <li class="app-input input1"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;修改日期</li>
+          <li class="app-input input2"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp;&nbsp;标记为完成</li>
+          <li class="app-input input3"><i class="glyphicon glyphicon glyphicon-remove-circle"></i>&nbsp;&nbsp;清除提醒</li>
+        </ul>
+      </div>
+      <div class="notecontent" contenteditable placeholder="写下此刻的想法..."></div>
+    </div>
+    <div class="edit">
+      <i class="glyphicon glyphicon-pencil" style="font-size:45px"></i>
+    </div>
+    <div class="foot">
+      <ul>
+
+      </ul>
+    </div>
+    <div class="timeSet">
+      <div class="timeBox">
+        <h4>日期与时间</h4>
+        <div> <label>请设置日期:&nbsp;&nbsp;</label><input class="date" type="date"></div>
+        <div> <label>请设置时间:&nbsp;&nbsp;</label><input class="time" type="time" disabled></div>
+        <p class="confirm">
+          <span class="btn btn-warning">取消</span>
+          <span class="btn btn-success">保存</span>
+        </p>
+      </div>
+    </div>
+    <div class="hideClick"></div>
+  </div>
+  <div class="app-page pg3" data-page="page3">
+    <div class="app-topbar blue container ">
+      <div class="app-button left back">
+        <i class="glyphicon glyphicon glyphicon-menu-left"></i>
+      </div>
+      <div class="app-title">手写</div>
+    </div>
+    <div class="app-content">
+      <div class="btn btn-danger col-xs-6 clear">清除</div>
+      <div class="btn btn-success col-xs-6 save">保存</div>
+      <canvas class="sketchpad" id="sketchpad"></canvas>
+      <img src="" class="outpu">
+      <div class="btn btn-warning col-xs-6 undo">撤销</div>
+      <div class="btn btn-info col-xs-6 redo">恢复</div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/app.min.js"></script>
+<script src="cordova.js"></script>
+<script src="js/sketchpad.js"></script>
+<script src="js/plugin.js"></script>
+
+</html>
